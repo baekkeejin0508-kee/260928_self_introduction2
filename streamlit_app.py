@@ -120,7 +120,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 st.markdown('<div class="section-kicker">MY PROMISE</div>', unsafe_allow_html=True)
 st.markdown('<h2 class="section-title">학생 곁에서, 세 가지를 지킵니다</h2>', unsafe_allow_html=True)
 st.markdown(
-    '<p class="section-copy">보건실은 몸이 아플 때뿐 아니라, 마음 놓고 도움을 청할 수 있는 학교의 안전한 공간이어야 합니다.</p>',
+    '<p class="section-copy">보건실은 학생들이 건강에 관한 도움을 편하게 청하고, 마음 놓고 머물 수 있는 학교 안의 공간입니다.</p>',
     unsafe_allow_html=True,
 )
 
