@@ -1,9 +1,20 @@
-import koreanize_matplotlib
+from importlib.metadata import distribution
+
 import matplotlib.pyplot as plt
+from matplotlib import font_manager
 import pandas as pd
 import plotly.express as px
 import seaborn as sns
 import streamlit as st
+
+KOREAN_FONT_PATH = distribution("koreanize-matplotlib").locate_file(
+    "koreanize_matplotlib/fonts/NanumGothic.ttf"
+)
+font_manager.fontManager.addfont(str(KOREAN_FONT_PATH))
+plt.rcParams["font.family"] = font_manager.FontProperties(
+    fname=KOREAN_FONT_PATH
+).get_name()
+plt.rcParams["axes.unicode_minus"] = False
 
 st.set_page_config(
     page_title="시각화 라이브러리 비교",
